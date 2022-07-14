@@ -1,0 +1,16 @@
+[$Version]
+update_info=ksmserver_update_loginMode_value.upd:ksmserver_update_loginMode_value_default_enum
+
+[LegacySession: saved at previous logout]
+count=0
+
+[Session: saved at previous logout]
+clientId1=10145dbd1dd000165781501000000197350004
+count=1
+program1=/usr/lib/DiscoverNotifier
+restartCommand1=/usr/lib/DiscoverNotifier,-session,10145dbd1dd000165781501000000197350004_1657821598_925333
+restartStyleHint1=0
+userId1=vm
+
+[SubSession: 7c5bcdb8-abd6-4007-b17d-b7574e502c82]
+count=0

@@ -1,0 +1,8 @@
+[FileDialogSize]
+HDMI-0 Height 1920x1080=600
+HDMI-0 Width 1920x1080=980
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/Downloads/distro_icons.zip,file:$HOME/.config/alacritty/alacritty.yml
+Recent URLs[$e]=file:$HOME/Downloads/,file:$HOME/.config/alacritty/
+detailViewIconSize=16

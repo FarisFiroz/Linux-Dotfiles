@@ -1,0 +1,59 @@
+#--------------------Required Basic Keybinds--------------------#
+
+# Reload sxhkd and bspwm
+super + shift + r
+	bspc wm -r && pkill -USR1 -x sxhkd
+
+# kill bspwm
+super + ctrl + q
+  bspc quit
+ 
+# kill a window
+super + shift + q
+	bspc node -c
+ 
+# create a new terminal window or swap the current one to the biggest one in the screen 
+super + Return
+	alacritty
+
+# start rofi
+super + shift + Return
+  rofi -show drun
+
+# take screenshot
+super + shift + s
+  maim -s -o| xclip -selection clipboard -t image/png
+
+#--------------------Change Appearance--------------------#
+
+#Fullscreen
+super + shift + f
+  bspc node -t fullscreen
+
+#Tiled
+super + shift + t
+  bspc node -t tiled
+
+#Floating
+super + shift + x
+  bspc node -t floating
+
+
+#--------------------Open Apps--------------------#
+
+# Start Workspace Term
+super + backslash
+  alacritty -e mprocs
+
+# Start file explorer
+super + n
+  nemo
+
+# Start Web Browser
+super + b
+  flatpak run io.gitlab.librewolf-community
+
+#--------------------Swap Workspaces--------------------#
+super + {_,shift + }{1-9,0}
+  bspc {desktop -f, node -d} '^{1-9,10}'
+
